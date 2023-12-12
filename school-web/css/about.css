@@ -1,0 +1,273 @@
+.text-container{
+    margin-top: 9rem;
+    text-align: center;
+    padding: 15px;
+    background: var(--color-success);
+    width: 27rem;
+    border-left: 3px solid white;
+    position: relative;
+    left: 45rem;
+    text-decoration: underline;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.leftHeader{
+    margin-left: 7rem;
+}
+.headerImage{
+    width: 31rem;
+    border-top-left-radius: 40px;
+}
+.headerPI, .headerPII, .headerPIII, .headerPIV{
+    width: 75rem;
+    font-size: 20px;
+}
+.rightHeader{
+    margin-right: 1rem;
+}
+.headerH3{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 4px 2px 3px black ;
+    position: relative;
+    top: 1.2rem;
+    color: var(--color-warning);
+}
+.h3_container{
+    background-color: var(--color-bg2);
+    position: relative;
+    width: 496px;
+    bottom: 140px;
+    height: 140px;
+}
+.span-text{
+    font-size: 19px;
+    color: var(--color-white);
+    text-shadow: 4px 2px 3px black ;
+   
+}
+
+.about_words{
+    margin-bottom: 6rem;
+    border-bottom: 2px solid var(--color-bg1);
+}
+.about_words h3{
+    padding: 1.2rem;
+    background-color: var(--color-success);
+    text-decoration: underline;
+    width: 20rem;
+    text-align: center;
+    margin-left: 48rem;
+    margin-top: 13rem;
+}
+.about_words p{
+    width: 80rem;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 1.7rem;
+    text-shadow: 7px 5px 8px black;
+    margin-left: 20rem;
+    margin-bottom: 2rem;
+}
+
+.about_achievements{
+    margin-top: -9rem;
+    gap: 5;
+}
+.about-achievement-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+.about_achievement_right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+.achievements_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    
+}
+.achievement_card{
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.archieve_h1, .archieve_p{
+    margin-bottom: 1.5rem;
+}
+.archieve_p{
+    font-size: 30px;
+}
+.achievement_card:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+.achievement_icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    width: 75px;
+}
+.achievement_card:nth-child(2) .achievement_icon{
+    background: var(--color-success);
+}
+.achievement_card:nth-child(3) .achievement_icon{
+    background: var(--color-primary);
+}
+.achievement_card p{
+    margin-top: 1rem;
+}
+
+/* ============================ MEDIA QUERIES (TABLET) =========================== */
+
+@media screen and (max-width: 1024px) {
+
+    .headerContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .text-container{
+        margin-top: 10rem;
+        text-align: center;
+        padding: 15px;
+        background: var(--color-success);
+        width: 27rem;
+        border-left: 3px solid white;
+        margin-left: -12rem;
+        text-decoration: underline;
+    }
+
+    .leftHeader{
+        margin-left: 17rem;
+        margin-top: -0.8rem;
+    }
+    .headerImage{
+        width: 27rem;
+        border-top-left-radius: 0px;
+
+    }
+    .rightHeader{
+        margin-top: -7rem;
+    }
+    .headerPI, .headerPII, .headerPIII, .headerPIV{
+        width: 55rem;
+        font-size: 19px;
+        text-align: center;
+        margin-left: 4rem;
+    }
+    .h3_container{
+        background-color: var(--color-bg2);
+        position: relative;
+        width: 432px;
+        bottom: 140px;
+        height: 140px;
+    }
+    .about_achievements{
+        margin-top: -5rem;
+
+    }
+   .about-achievement-container{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+   }
+   .about_achievement_left{
+    width: 80%;
+    margin: 0 auto;
+   }
+   .archieve_h1{
+    font-size: 35px;
+    text-align: center;
+   }
+  
+.about_words h3{
+    padding: 1.2rem;
+    background-color: var(--color-success);
+    text-decoration: underline;
+    width: 20rem;
+    text-align: center;
+    margin-left: 23rem;
+    margin-top: 13rem;
+}
+.about_words p{
+    width: 55rem;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 1.7rem;
+    text-shadow: 7px 5px 8px black;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+.about_words{
+  
+    margin-top: 7rem;
+   
+}
+}
+
+/* ============================ MEDIA QUERIES (PHONES) =========================== */
+
+@media screen and (max-width: 600px) {
+    .about_words h3{
+        padding: 1rem;
+        background-color: var(--color-success);
+        text-decoration: underline;
+        width: 13rem;
+        text-align: center;
+        margin-left: 12rem;
+    }
+    .about_words p{
+        width: 33rem;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 1.7rem;
+        text-shadow: 7px 5px 8px black;
+        margin-left: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    .leftHeader{
+        margin-left: 5rem;
+        margin-top: 4rem;
+    }
+    .headerImage{
+        width: 27rem;
+        border-top-left-radius: 0px;
+        margin-top: -5rem;
+
+    }
+    .headerContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .text-container{
+        margin-top: 10rem;
+        text-align: center;
+        padding: 15px;
+        background: var(--color-success);
+        width: 22rem;
+        border-left: 3px solid white;
+        margin-left: -33rem;
+        text-decoration: underline;
+       
+    }
+    .rightHeader{
+        margin-top: -7rem;
+    }
+    .headerPI, .headerPII, .headerPIII, .headerPIV{
+        width: 27rem;
+        font-size: 17px;
+        text-align: center;
+        margin-left: 5rem;
+    }
+}

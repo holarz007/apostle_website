@@ -1,0 +1,74 @@
+.text-container{
+    margin-top: 12rem;
+    text-align: center;
+    padding: 15px;
+    background: var(--color-bg2);
+    width: 20rem;
+    border-left: 3px solid white;
+    position: relative;
+    left: 39rem;
+}
+.gallery_container{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+} 
+.gallery_container video{
+    border: 10px solid rgb(26, 28, 55);
+    border-radius: 20px;
+    
+} 
+.photo{
+    height: 100%;
+}
+
+
+/* ======================== RESPONSIVE FOR TABLETS ========================== */
+
+@media screen and (max-width: 1024px) {
+    .text-container{
+        left: 18rem;
+        margin-top: 14rem;
+    }
+    .video_divider{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+       
+        
+     
+    }
+    .video{
+        height: 70%;
+        background: var(--color-bg2);
+        margin-left: 20px;
+       
+    }
+   
+ 
+}
+
+
+/* ======================== RESPONSIVE FOR PHONES ========================== */
+
+@media screen and (max-width: 600px) {
+    .text-container{
+        margin-top: 12rem;
+        padding: 12px;
+        left: 9rem;
+    }
+    .video_divider{
+        display: grid;
+        grid-template-columns: 1fr;
+     
+    }
+    .video{
+        height: 70%;
+        background: var(--color-bg2);
+        margin-left: 110px;
+        
+       
+    }
+}
